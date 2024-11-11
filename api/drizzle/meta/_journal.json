@@ -8,6 +8,20 @@
       "when": 1731328753686,
       "tag": "0000_cooing_chimera",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1731329208854,
+      "tag": "0001_tough_fabian_cortez",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1731329419363,
+      "tag": "0002_clear_lockheed",
+      "breakpoints": true
     }
   ]
 }
