@@ -43,3 +43,8 @@ export const insertOrderWithItemsSchema = z.object({
   order: insertOrderSchema,
   items: z.array(insertOrderItemschema),
 })
+
+
+export const updateOrderSchema = createInsertSchema(ordersTable).pick({
+  status: true,
+});
