@@ -1,9 +1,9 @@
 import { Router } from "express";
 import { createOrder, listOrders, getOrder} from "./ordercontroller.js";
 import { validateData } from "../../middleware/validationmiddleware.js";
-import { insertOrderSchema, insertOrderWithItemsSchema, updateOrderSchema } from "../../db/ordersSchema.js";
-import { verify } from "jsonwebtoken";
+import {insertOrderWithItemsSchema, updateOrderSchema } from "../../db/ordersSchema.js";
 import { verifyToken } from "../../middleware/authmiddleware.js";
+import { updateOrder } from "./ordercontroller.js";
 
 
 const router = Router();
