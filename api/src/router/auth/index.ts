@@ -1,13 +1,14 @@
 import {Router} from "express";
-import { createuserSchema, usersTable, loginSchema } from "../../db/usersSchema";
-import { validateData } from "../../middleware/validationmiddleware";
+import { createuserSchema, usersTable, loginSchema } from "../../db/usersSchema.js";
+import { validateData } from "../../middleware/validationmiddleware.js";
 import bcrypt from "bcryptjs";
-import db from "../../db/index";
+import db from "../../db/index.js";
 import { eq } from "drizzle-orm";
 import { Request, Response } from "express";
-const router = Router();
 import jwt from "jsonwebtoken";
 
+
+const router = Router();
 router.post("/register", validateData(createuserSchema), async (req, res) => {
 
     try{

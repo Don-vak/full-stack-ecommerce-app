@@ -5,10 +5,10 @@ import {
   createProducts,
   updateProducts,
   deleteProducts,
-} from "./productcontroller";
-import { validateData } from "../../middleware/validationmiddleware";
-import { createproductSchema, updateproductSchema } from "../../db/productsSchema";
-import { verifySeller, verifyToken } from "../../middleware/authmiddleware";
+} from "./productcontroller.js";
+import { validateData } from "../../middleware/validationmiddleware.js";
+import { createproductSchema, updateproductSchema } from "../../db/productsSchema.js";
+import { verifySeller, verifyToken } from "../../middleware/authmiddleware.js";
 
 
 
